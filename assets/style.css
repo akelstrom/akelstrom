@@ -1,0 +1,45 @@
+@font-face {
+    src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+}
+
+header {
+    background-color:#cccccB;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.logo {
+    width: 300px;
+    height: 300px;
+}
+
+.img-logo {
+    display: flex;
+    
+}
+
+header h1 {
+    color: rgb(51, 204, 204);
+    font-family: poppins;
+    font-size: 60px;
+    font-style: bold;
+}
+
+header a {
+    text-decoration: none;
+    color: #ffff99;
+    
+}
+
+header nav ul {
+   list-style: none;
+
+}
+
+/*End header styling*/
+
+.hero {
+    background-image: url("../Design Elements/Design Element .png");
+    background-size: cover;
+}
