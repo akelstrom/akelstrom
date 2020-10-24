@@ -3,7 +3,7 @@
 }
 
 header {
-    background-color:#cccccB;
+    /* background-color:#cccccb; */
     display: flex;
     justify-content: flex-start;
     align-content: center;
@@ -19,7 +19,7 @@ header h1 {
 header h2 {
     font-family: poppins;
     align-items: right;
-    color: white;
+    color: #ffff99;
 }
 
 
@@ -70,7 +70,7 @@ nav ul a {
 
 .nav-bar {
     display: flex;
-    background-color: #cccccb;
+    background-color: white;
     justify-content: flex-end;
 }
 
@@ -80,45 +80,100 @@ nav ul a {
 }
 /* end nav styling */
 
-
+/*start main content*/
 .container {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    margin-left: 50px;
     
-        flex-direction: column;
-        width: 100%;
-        height: 300px;
-        margin-left: 50px;
-      
-
+    
 }
 
 .container-item {
     flex: 1;
+    
 
 }
 
 .container-title {
     float: left;
-    border-right: solid 5px;
     padding: 20px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    font-family: poppins;
+    color: rgb(51, 204, 204);
+    
 }
 
 .container-content {
     padding: 20px;
-    margin-left: 20px;
+    margin-left: 100px;
+    
+}
+
+.container-content p {
+    padding: 0 60px;
+    color: rgb(51, 204, 204)
+}
+
+.container-content a {
+    padding: 0 15px;
 }
 
 #about-me {
     padding: 30px;
+    border-right: solid 5px;
     
 }
 
 #work {
     padding: 50px;
+    border-right: solid 5px;
 }
 
-#contact-me {
-    padding: 17px;
+#contact {
+    padding: 18px;
+    border-right: solid 5px;
+}
+
+/* grid styling */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 0 20px;
+}
+    
+.item1 { 
+    grid-area: 1 / 1 / 5 / 5; 
+    
+}
+.item2 { 
+    grid-area: 5 / 1 / 7 / 3; 
+}
+.item3 {
+     grid-area: 5 / 3 / 7 / 5; 
+}
+.item4 { 
+    grid-area: 1 / 5 / 3 / 7; 
+}
+.item5 {
+     grid-area: 3 / 5 / 5 / 7; 
+}
+
+.grid-container img {
+     width: 100%;
+     border: solid 2px #ffff99;
+}
+
+.grid-container span {
+    background-color: #cccccB;
+    color: #ffff99;
+    font-family: poppins;
+
+
 }
