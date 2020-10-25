@@ -21,16 +21,17 @@ header h1 {
     font-style: bold;
 }
 
-header h2 {
+.hero h2 {
     font-family: poppins;
     align-items: right;
     color: #ffff99;
     background-color:#cccccb;
+    text-align: center;
 }
 
 .logo {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
 }
 
 .img-logo {
@@ -98,7 +99,7 @@ nav ul a {
 
 .selfie {
     width: 30%;
-    margin: 20px;
+    margin-left: 40px;
     border: solid 2px #ffff99;
 }
 .container-item {
@@ -120,12 +121,21 @@ nav ul a {
 }
 
 .container-content p {
-    padding: 0 60px;
-    color: rgb(51, 204, 204)
+    font-family: poppins;
+    color: rgb(51, 204, 204);
+    margin-left: 80px;
+    margin-top: 0px;
 }
-
 .container-content a {
     padding: 0 15px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #ffff99;
+    background-color: #cccccB;
+    font-family: poppins;
+    margin-left: 35px;
 }
 
 #about-me {
