@@ -27,6 +27,7 @@ header h1 {
     font-family: poppins;
     font-size: 55px;
     font-style: bold;
+    text-align: center;
     /* background-color:#cccccb; */
 }
 
@@ -35,7 +36,7 @@ header h2 {
     align-items: right;
     color: #ffff99;
     background-color:#cccccb;
-    text-align: center;
+    text-align: right;
     
 }
 
@@ -76,7 +77,12 @@ nav ul a {
     color: #ffff99;
     background-color: #cccccB;
     font-family: poppins;
-    
+}
+
+/* animation! */
+nav ul a:hover {
+    color: rgb(51, 204, 204);
+    background-color: #ffff99;
 }
 
 .nav-bar {
@@ -91,9 +97,7 @@ nav ul a {
 }
 /* end nav styling */
 
-/* body {
-    background-color: #cccccB;
-} */
+
 /*start main content*/
 .container {
     display: flex;
@@ -103,11 +107,6 @@ nav ul a {
     margin-left: 50px;
 }
 
-.selfie {
-    width: 30%;
-    margin-left: 40px;
-    border: solid 2px #ffff99;
-}
 .container-item {
     flex: 1;
 }
@@ -136,13 +135,6 @@ nav ul a {
     padding: 0 15px;
 }
 
-.contact-item a {
-    text-decoration: none;
-    color: #ffff99;
-    background-color: #cccccB;
-    font-family: poppins;
-    margin-left: 35px;
-}
 
 #about-me {
     padding: 30px;
@@ -159,12 +151,25 @@ nav ul a {
     border-right: solid 5px;
 }
 
+/* this is the picture of myself */
+.selfie {
+    width: 30%;
+    margin-left: 40px;
+    border: solid 2px #ffff99;
+    transition: 1s;
+}
+
+.selfie:hover {
+    opacity: 50%;
+}
+/* end main content */
+
 /* grid styling */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 0px;
+    grid-column-gap: 10px;
     grid-row-gap: 10px;
     padding: 0 20px;
 }
@@ -190,7 +195,13 @@ nav ul a {
      width: 100%;
      height: 100%;
      border: solid 2px #ffff99;
+     transition: 1s;
 }
+/* animation! */
+.grid-container img:hover {
+    opacity: 50%;
+}
+
 /*end grid styling*/
 
 /* styling and positioning of text over grid boxes */
@@ -205,7 +216,7 @@ nav ul a {
     bottom: 50px;
     left: 25px;
     background-color: #cccccb;
-    opacity: 80%;
+    opacity: 90%;
     font-family: poppins;
 }
 
@@ -220,7 +231,7 @@ nav ul a {
     bottom: 50px;
     left: 25px;
     background-color: #cccccb;
-    opacity: 80%;
+    opacity: 90%;
     font-family: poppins;
 }
 
@@ -235,7 +246,7 @@ nav ul a {
     bottom: 50px;
     left: 25px;
     background-color: #cccccb;
-    opacity: 80%;
+    opacity: 90%;
     font-family: poppins;
 }
 
@@ -245,14 +256,14 @@ nav ul a {
     color: #ffff99;
 }
 
-.text4 {
+ .text4 {
     position: absolute;
     bottom: 30px;
     left: 45px;
     background-color: #cccccb;
-    opacity: 80%;
-    font-family: poppins;
-}
+    opacity: 90%;
+    font-family: poppins; 
+} 
 
 .item5 {
     position: relative;
@@ -265,9 +276,34 @@ nav ul a {
     bottom: 45px;
     left: 45px;
     background-color: #cccccb;
-    opacity: 80%;
+    opacity: 90%;
     font-family: poppins;
 }
+/* end text over grid box styling/positioning */
+
+/* contact me section */
+.contact-link  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contact-item a {
+    text-decoration: none;
+    color: #ffff99;
+    background-color: #cccccB;
+    font-family: poppins;
+    margin-left: 35px;
+}
+/* animation! */
+.contact-item a:hover {
+    color: rgb(51, 204, 204);
+    background-color: #ffff99;
+}
+/* end contact me section */
+
+
+
+/* media query  */
 @media screen and (max-width: 700px) {
     
     header {
@@ -280,3 +316,4 @@ nav ul a {
       }
     
   }
+  /* end media query */
