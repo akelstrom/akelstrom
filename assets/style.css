@@ -10,33 +10,39 @@
 header {
     /* background-color:#cccccb; */
     display: flex;
-    justify-content: flex-start;
-    align-content: center;
+    justify-content: space between;
+    align-items: flex-end;
+    /* background-image: url(https://github.com/akelstrom/akelstrom/blob/master/images/Design%20Element%20.jpg?raw=true); */
+    background-size: cover;
+}
+
+header .col {
+    display: flex;
+    /* float: left; */
+    width: 32%;
 }
 
 header h1 {
     color: rgb(51, 204, 204);
     font-family: poppins;
-    font-size: 60px;
+    font-size: 55px;
     font-style: bold;
+    /* background-color:#cccccb; */
 }
 
-.hero h2 {
+header h2 {
     font-family: poppins;
     align-items: right;
     color: #ffff99;
     background-color:#cccccb;
     text-align: center;
+    
 }
 
 .logo {
-    width: 200px;
-    height: 200px;
-}
-
-.img-logo {
-    display: flex;
-    float: left;
+    width: 250px;
+    height: 250px;
+    /* background-color: #ccccc9; */
 }
 
 .name {
@@ -159,7 +165,7 @@ nav ul a {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 10px;
     padding: 0 20px;
 }
     
@@ -182,9 +188,12 @@ nav ul a {
 
 .grid-container img {
      width: 100%;
+     height: 100%;
      border: solid 2px #ffff99;
 }
+/*end grid styling*/
 
+/* styling and positioning of text over grid boxes */
 .item1 {
     position: relative;
     text-align: center;
@@ -229,3 +238,45 @@ nav ul a {
     opacity: 80%;
     font-family: poppins;
 }
+
+.item4 {
+    position: relative;
+    text-align: center;
+    color: #ffff99;
+}
+
+.text4 {
+    position: absolute;
+    bottom: 30px;
+    left: 45px;
+    background-color: #cccccb;
+    opacity: 80%;
+    font-family: poppins;
+}
+
+.item5 {
+    position: relative;
+    text-align: center;
+    color: #ffff99;
+}
+
+.text5 {
+    position: absolute;
+    bottom: 45px;
+    left: 45px;
+    background-color: #cccccb;
+    opacity: 80%;
+    font-family: poppins;
+}
+@media screen and (max-width: 700px) {
+    
+    header {
+      display: block;
+    }
+    
+    .col {
+        width: 100%;
+        margin: 0 0 10px 0;
+      }
+    
+  }
