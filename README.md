@@ -7,7 +7,7 @@ This is my portfolio website. Feel free to checkout samples of my work. I curren
 ## Tech Used
 * HTML 5
 * CSS 
-    * Slighty more advanced concepts used here such as flexbox, and CSS grid
+    * Slighty more advanced concepts used here such as flexbox, CSS grid and animation.
 * Git/GitHub
 
 
