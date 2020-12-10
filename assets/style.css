@@ -197,6 +197,7 @@ nav ul a:hover {
      border: solid 2px #ffff99;
      transition: 1s;
 }
+
 /* animation! */
 .grid-container img:hover {
     opacity: 50%;
