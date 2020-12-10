@@ -12,7 +12,7 @@ This is my portfolio website. Feel free to checkout samples of my work. I curren
 
 
 ## Screenshot
-![Screenshot of porfolio page](https://github.com/akelstrom/portfolio/blob/master/images/screencapture-file-Users-Alexandra-Desktop-projects-akelstrom-index-html-2020-10-25-17_50_17.png?raw=true)
+![Screenshot of porfolio page](https://github.com/akelstrom/portfolio/blob/master/images/screencapture-akelstrom-github-io-portfolio-2020-12-10-17_00_11%20(1).png?raw=true)
 
 ## Contributions
 Big thank you to the UPenn LPS Coding Bootcamp instructional team for all the support and help. 
